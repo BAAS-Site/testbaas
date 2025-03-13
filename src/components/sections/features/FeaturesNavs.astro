@@ -11,7 +11,7 @@ const { title, tabs } = Astro.props;
 interface Tab {
   heading: string;
   content: string;
-  svg: string;
+  svg?: string;
   src: any;
   alt: string;
   first?: boolean;
