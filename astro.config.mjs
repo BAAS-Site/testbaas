@@ -10,9 +10,11 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://baasdragons.org",
+  // base: '/baastest',
   image: {
     domains: ["images.unsplash.com"],
   },
+
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "fr"],
