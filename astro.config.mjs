@@ -57,38 +57,38 @@ export default defineConfig({
       // "zh-cn": { label: "简体中文", lang: "zh-CN" },
     },
     // https://starlight.astro.build/guides/sidebar/
-    sidebar: [
-      {
-        label: "Quick Start Guides",
-        translations: {
-          de: "Schnellstartanleitungen",
-          es: "Guías de Inicio Rápido",
-          fa: "راهنمای شروع سریع",
-          fr: "Guides de Démarrage Rapide",
-          ja: "クイックスタートガイド",
-          "zh-cn": "快速入门指南",
-        },
-        autogenerate: { directory: "guides" },
-      },
-      {
-        label: "Tools & Equipment",
-        items: [
-          { label: "Tool Guides", link: "tools/tool-guides/" },
-          { label: "Equipment Care", link: "tools/equipment-care/" },
-        ],
-      },
-      {
-        label: "Construction Services",
-        autogenerate: { directory: "construction" },
-      },
-      {
-        label: "Advanced Topics",
-        autogenerate: { directory: "advanced" },
-      },
-    ],
-    social: {
-      github: "https://github.com/mearashadowfax/ScrewFast",
-    },
+    // sidebar: [
+    //   {
+    //     label: "Quick Start Guides",
+    //     translations: {
+    //       de: "Schnellstartanleitungen",
+    //       es: "Guías de Inicio Rápido",
+    //       fa: "راهنمای شروع سریع",
+    //       fr: "Guides de Démarrage Rapide",
+    //       ja: "クイックスタートガイド",
+    //       "zh-cn": "快速入门指南",
+    //     },
+    //     autogenerate: { directory: "guides" },
+    //   },
+    //   {
+    //     label: "Tools & Equipment",
+    //     items: [
+    //       { label: "Tool Guides", link: "tools/tool-guides/" },
+    //       { label: "Equipment Care", link: "tools/equipment-care/" },
+    //     ],
+    //   },
+    //   {
+    //     label: "Construction Services",
+    //     autogenerate: { directory: "construction" },
+    //   },
+    //   {
+    //     label: "Advanced Topics",
+    //     autogenerate: { directory: "advanced" },
+    //   },
+    // ],
+    // social: {
+    //   github: "https://github.com/mearashadowfax/ScrewFast",
+    // },
     disable404Route: true,
     customCss: ["./src/assets/styles/starlight.css"],
     favicon: "/favicon.ico",
@@ -98,23 +98,23 @@ export default defineConfig({
       MobileMenuFooter: "./src/components/ui/starlight/MobileMenuFooter.astro",
       ThemeSelect: "./src/components/ui/starlight/ThemeSelect.astro",
     },
-    head: [
-      {
-        tag: "meta",
-        attrs: {
-          property: "og:image",
-          content: "https://screwfast.uk" + "/social.webp",
-        },
-      },
-      {
-        tag: "meta",
-        attrs: {
-          property: "twitter:image",
-          content: "https://screwfast.uk" + "/social.webp",
-        },
-      },
-    ],
-  }), 
+    // head: [
+    //   {
+    //     tag: "meta",
+    //     attrs: {
+    //       property: "og:image",
+    //       content: "https://screwfast.uk" + "/social.webp",
+    //     },
+    //   },
+    //   {
+    //     tag: "meta",
+    //     attrs: {
+    //       property: "twitter:image",
+    //       content: "https://screwfast.uk" + "/social.webp",
+    //     },
+    //   },
+    // ],
+  }),
   compressor({
     gzip: false,
     brotli: true,
